@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+
+
+        <form method="post">
+            账号: <input type="text" name="username" required><br>
+            密码: <input type="password" name="password" required><br>
+            <input type="submit" value="Login">
+        </form>
+        <p>没有账号? <a href="{{ url_for('register') }}">注册</a>.</p>
+    </div>
+</body>
+</html>

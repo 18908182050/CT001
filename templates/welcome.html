@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome, {{ username }}!</h2>
+    <img src="{{ url_for('static', filename='image.jpg') }}" alt="My Image" style="max-width: 100%; height: auto;">
+    <br>
+    <a href="{{ url_for('logout') }}">退出</a>
+</body>
+</html>
