@@ -58,6 +58,7 @@ def register():
         username = request.form['username']
         password = request.form['password']
 
+
         # 将新用户添加到数据库
         conn = get_db_connection()
         cursor = conn.cursor()
