@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome</title>
+    <title>欢迎登录</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <h2>Welcome, {{ username }}!</h2>
+    <h2>欢迎登录, {{ username }}!</h2>
     <img src="{{ url_for('static', filename='image.jpg') }}" alt="My Image" style="max-width: 100%; height: auto;">
     <br>
     <a href="{{ url_for('logout') }}">退出</a>

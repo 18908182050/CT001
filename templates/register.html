@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register</title>
+    <title>注册</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,14 +19,14 @@
 </head>
 <body>
     <div class="container">
-        <h2>Register</h2>
+        <h2>注册</h2>
         {% if error %}
             <p style="color: red;">{{ error }}</p>
         {% endif %}
         <form method="post">
             账号: <input type="text" name="username" required><br>
             密码: <input type="password" name="password" required><br>
-            <input type="submit" value="Register">
+            <input type="submit" value="注册">
         </form>
         <p>有账号？ <a href="{{ url_for('login') }}">登录</a>.</p>
     </div>
