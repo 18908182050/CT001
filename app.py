@@ -7,13 +7,14 @@ app.secret_key = 'your_secret_key'
 # MySQL 数据库配置
 db_config = {
     'host': 'localhost',
-    'user': 'root',  # 替换为您的 MySQL 用户名
-    'password': '123456',  # 替换为您的 MySQL 密码
+    'user': 'root',  # MySQL 用户名
+    'password': '123456',  # MySQL 密码
     'database': 'flask_login_db'
 }
 
 # 创建数据库连接
 def get_db_connection():
+
     conn = MySQLdb.connect(**db_config)
     return conn
 
